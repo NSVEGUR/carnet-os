@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "npm run build",
+  "buildCommand": "rimraf dist && tsc",
   "builds": [
     {
       "src": "dist/index.js",
