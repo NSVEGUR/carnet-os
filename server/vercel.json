@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "buildCommand": "rimraf dist && tsc",
   "builds": [
     {
       "src": "dist/index.js",
