@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+	--primary-font: -apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial',
+		sans-serif;
+	--primary-font-size: 1rem;
+	--secondary-font-size: 1.6rem;
+	--system-cursor-default: url('/glyphs/cursor.png');
+	--shadow-effect: inset 0 0 0 0.2px hsla(0, 0%, 96%, 0.7), 0 0 0 0.2px hsla(0, 0%, 13%, 0.7),
+		hsla(0, 0%, 0%, 0.3) 2px 5px 19px 7px;
+	--shadow-effect-window: inset 0 0 0 0.2px hsla(0, 0%, 96%, 0.7), 0 0 0 0.2px hsla(0, 0%, 13%, 0.7),
+		hsla(0, 0%, 0%, 0.4) 2px 5px 19px 12px;
+	backdrop-filter: blur(5px);
+
+	--system-color: #3273ecf3;
+
+	/* For System dark-theme */
+	--desktop-wallpaper: url('/wallpapers/dark.jpeg');
+	--carnet-wallpaper: url('/wallpapers/carnetDark.png');
+	--system-primary-color: #1a1a1d;
+	--system-text-color: white;
+	--system-text-color-op: black;
+	--system-transparent-color-primary: rgba(0, 0, 0, 0.2);
+	--system-transparent-color-secondary: rgba(0, 0, 0, 0.3);
+	--system-transparent-color-nav: rgba(0, 0, 0, 0.2);
+	--system-transparent-color-window: rgba(0, 0, 0, 0.4);
+	--system-color-window: #1b1b1d;
+	--system-transparent-color-primary-op: rgba(255, 255, 255, 0.3);
+	--system-transparent-color-secondary-op: rgba(255, 255, 255, 0.5);
+	--thumb-primary-color: #212a3b;
+	--thumb-secondary-color: #515a68;
+	--system-filter: invert(0);
+	--system-thumb: #9c9c9f;
+	--theme-glyph-bg: var(--system-color);
+}
+
+/* For System light-theme */
+.light-theme {
+	--desktop-wallpaper: url('/wallpapers/light.jpeg');
+	--carnet-wallpaper: url('/wallpapers/carnetLight.png');
+	--system-primary-color: #fffefe;
+	--system-text-color: black;
+	--system-text-color-op: white;
+	--system-transparent-color-primary: rgba(255, 255, 255, 0.5);
+	--system-transparent-color-secondary: rgba(255, 255, 255, 0.3);
+	--system-transparent-color-nav: rgba(255, 255, 255, 0.2);
+	--system-transparent-color-window: rgba(255, 255, 255, 0.4);
+	--system-color-window: #fefeff;
+	--system-transparent-color-primary-op: rgba(0, 0, 0, 0.3);
+	--system-transparent-color-secondary-op: rgba(0, 0, 0, 0.5);
+	--thumb-primary-color: #fefffe;
+	--thumb-secondary-color: #dfe3e7;
+	--system-filter: invert(1);
+	--system-thumb: #535353;
+	--theme-glyph-bg: var(--system-transparent-color-primary-op);
+}

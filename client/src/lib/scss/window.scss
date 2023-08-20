@@ -1,0 +1,126 @@
+.winbox {
+	border-radius: 13px;
+	border: none;
+	box-shadow: var(--shadow-effect-window);
+	color: white;
+	backdrop-filter: blur(30px);
+	background: var(--system-color-window);
+	border: 1px solid var(--system-transparent-color-window);
+	z-index: 10;
+	&:not(.focus) {
+		.wb-min,
+		.wb-close,
+		.wb-max {
+			background: var(--system-thumb);
+		}
+		.wb-icon:hover {
+			.wb-close {
+				background: #fe5e55;
+			}
+			.wb-min {
+				background: #ffbd2d;
+			}
+			.wb-max {
+				background: #25c93f;
+			}
+		}
+	}
+	.wb-title {
+		text-align: center;
+		font-size: 1.2rem;
+		font-weight: 500;
+		padding-top: 5px;
+		color: var(--system-text-color);
+	}
+	.wb-body {
+		animation: grow 0.4s ease;
+		margin: 1px;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		color: white;
+		background: transparent;
+		&::-webkit-scrollbar {
+			background-color: transparent;
+			width: 4px;
+		}
+		&::-webkit-scrollbar-track {
+			background-color: transparent;
+		}
+		&::-webkit-scrollbar-thumb {
+			background-color: var(--system-transparent-color-primary-op);
+			border-radius: 13px;
+		}
+		&::-webkit-scrollbar-button {
+			display: none;
+		}
+	}
+	.wb-header {
+		height: 40px;
+		margin-bottom: 20px;
+		cursor: default !important;
+	}
+	.wb-icon {
+		margin-top: 7px;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		display: flex;
+		gap: 8px;
+		flex-direction: row-reverse;
+	}
+
+	.wb-icon:hover * {
+		transition: all 0.2s ease;
+		transform: scale(1.2);
+	}
+	.wb-icon:hover {
+		color: black;
+		.wb-close {
+			position: relative;
+			&::before {
+				content: '×';
+				position: absolute;
+				top: -7px;
+				right: 2.5px;
+			}
+		}
+		.wb-max {
+			position: relative;
+			&::before {
+				content: '+';
+				position: absolute;
+				top: -7px;
+				right: 2.5px;
+			}
+		}
+		.wb-min {
+			position: relative;
+			&::before {
+				content: '-';
+				position: absolute;
+				top: -10.5px;
+				right: 3px;
+			}
+		}
+	}
+	.wb-close,
+	.wb-max,
+	.wb-min {
+		color: black;
+		border-radius: 50%;
+		height: 13px;
+		cursor: default;
+		font-size: 0.8rem;
+		width: 13px;
+	}
+	.wb-close {
+		background: #fe5e55;
+	}
+	.wb-min {
+		background: #ffbd2d;
+		font-size: 1rem;
+	}
+	.wb-max {
+		background: #25c93f;
+	}
+}

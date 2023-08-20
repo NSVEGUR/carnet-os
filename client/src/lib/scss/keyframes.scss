@@ -1,0 +1,92 @@
+.hithere {
+	animation: hithere 1.5s ease;
+}
+.grow {
+	animation: grow 1s ease;
+}
+.shrink {
+	animation: shrink 1s ease;
+}
+#profile-pic:hover {
+	animation: hithere 1s ease;
+}
+@keyframes grow {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+@keyframes shrink {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(0);
+	}
+}
+
+@keyframes hithere {
+	30% {
+		transform: scale(1.2);
+	}
+	40%,
+	60% {
+		transform: rotate(-20deg) scale(1.2);
+	}
+	50% {
+		transform: rotate(20deg) scale(1.2);
+	}
+	70% {
+		transform: rotate(0deg) scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes loading {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes appearFromBottom {
+	0% {
+		transform: translateY(20vh);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+@keyframes appearFromTop {
+	0% {
+		transform: translateY(-20vh);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+@keyframes shake {
+	0% {
+		transform: translateX(10px);
+	}
+	50% {
+		transform: translateX(-10px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
