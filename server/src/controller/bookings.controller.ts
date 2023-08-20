@@ -28,16 +28,16 @@ const bookTicket = catchAsync(async function (
 ) {
   const { from, to, date, coach, trainid, userid, departure, arrival } =
     req.body;
-  const results = await db.insert(bookings).values({
-    trainId: trainid,
-    userId: userid,
-    fromPlace: from,
-    toPlace: to,
-    dateOfJourney: date,
-    coach,
-    departure,
-    arrival,
-  });
+  // const results = await db.insert(bookings).values({
+  //   trainId: trainid,
+  //   userId: userid,
+  //   fromPlace: from,
+  //   toPlace: to,
+  //   dateOfJourney: date,
+  //   coach,
+  //   departure,
+  //   arrival,
+  // });
   return res.status(200).json({
     status: "success",
     results: req.body,
