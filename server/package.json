@@ -4,9 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "vercel dev",
     "build": "rimraf dist && tsc",
-    "deploy": "vercel deploy --prod",
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "generate": "drizzle-kit generate:mysql",
     "push": "drizzle-kit push:mysql",
