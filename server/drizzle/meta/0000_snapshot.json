@@ -1,103 +1,74 @@
 {
+  "id": "00000000-0000-0000-0000-000000000000",
+  "prevId": "",
   "version": "5",
   "dialect": "mysql",
-  "id": "f2573e14-27de-4826-aabb-31adf955ef93",
-  "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "bookings": {
       "name": "bookings",
       "columns": {
         "id": {
+          "autoincrement": true,
           "name": "id",
           "type": "serial",
           "primaryKey": false,
-          "notNull": true,
-          "autoincrement": true
+          "notNull": true
         },
         "train_id": {
+          "autoincrement": false,
           "name": "train_id",
           "type": "int",
           "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
+          "notNull": false
         },
         "user_id": {
+          "autoincrement": false,
           "name": "user_id",
           "type": "int",
           "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
+          "notNull": false
         },
         "from_place": {
+          "autoincrement": false,
           "name": "from_place",
           "type": "varchar(256)",
           "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
+          "notNull": false
         },
         "to_place": {
+          "autoincrement": false,
           "name": "to_place",
           "type": "varchar(256)",
           "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
+          "notNull": false
         },
         "date_of_journey": {
+          "autoincrement": false,
           "name": "date_of_journey",
           "type": "varchar(256)",
           "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
+          "notNull": false
         },
         "departure": {
+          "autoincrement": false,
           "name": "departure",
           "type": "varchar(256)",
           "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
+          "notNull": false
         },
         "arrival": {
+          "autoincrement": false,
           "name": "arrival",
           "type": "varchar(256)",
           "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
+          "notNull": false
         },
         "coach": {
+          "autoincrement": false,
           "name": "coach",
           "type": "varchar(256)",
           "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        }
-      },
-      "indexes": {},
-      "foreignKeys": {
-        "bookings_train_id_trains_id_fk": {
-          "name": "bookings_train_id_trains_id_fk",
-          "tableFrom": "bookings",
-          "tableTo": "trains",
-          "columnsFrom": [
-            "train_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
-        },
-        "bookings_user_id_users_id_fk": {
-          "name": "bookings_user_id_users_id_fk",
-          "tableFrom": "bookings",
-          "tableTo": "users",
-          "columnsFrom": [
-            "user_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
+          "notNull": false
         }
       },
       "compositePrimaryKeys": {
@@ -108,56 +79,56 @@
           ]
         }
       },
+      "indexes": {},
+      "foreignKeys": {},
       "uniqueConstraints": {}
     },
     "trains": {
       "name": "trains",
       "columns": {
         "id": {
+          "autoincrement": true,
           "name": "id",
           "type": "serial",
           "primaryKey": false,
-          "notNull": true,
-          "autoincrement": true
+          "notNull": true
         },
         "name": {
+          "autoincrement": false,
           "name": "name",
           "type": "varchar(256)",
           "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
+          "notNull": false
         },
         "from_place": {
+          "autoincrement": false,
           "name": "from_place",
           "type": "varchar(256)",
           "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
+          "notNull": false
         },
         "to_place": {
+          "autoincrement": false,
           "name": "to_place",
           "type": "varchar(256)",
           "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
+          "notNull": false
         },
         "departure": {
+          "autoincrement": false,
           "name": "departure",
           "type": "varchar(256)",
           "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
+          "notNull": false
         },
         "arrival": {
+          "autoincrement": false,
           "name": "arrival",
           "type": "varchar(256)",
           "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
+          "notNull": false
         }
       },
-      "indexes": {},
-      "foreignKeys": {},
       "compositePrimaryKeys": {
         "trains_id": {
           "name": "trains_id",
@@ -166,35 +137,35 @@
           ]
         }
       },
+      "indexes": {},
+      "foreignKeys": {},
       "uniqueConstraints": {}
     },
     "users": {
       "name": "users",
       "columns": {
         "id": {
+          "autoincrement": true,
           "name": "id",
           "type": "serial",
           "primaryKey": false,
-          "notNull": true,
-          "autoincrement": true
+          "notNull": true
         },
         "mail": {
+          "autoincrement": false,
           "name": "mail",
           "type": "varchar(256)",
           "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
+          "notNull": false
         },
         "password": {
+          "autoincrement": false,
           "name": "password",
           "type": "varchar(256)",
           "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
+          "notNull": false
         }
       },
-      "indexes": {},
-      "foreignKeys": {},
       "compositePrimaryKeys": {
         "users_id": {
           "name": "users_id",
@@ -203,6 +174,8 @@
           ]
         }
       },
+      "indexes": {},
+      "foreignKeys": {},
       "uniqueConstraints": {}
     }
   },

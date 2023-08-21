@@ -1,3 +1,6 @@
+-- Current sql file was generated after introspecting the database
+-- If you want to run this migration please uncomment this code before executing migrations
+/*
 CREATE TABLE `bookings` (
 	`id` serial AUTO_INCREMENT NOT NULL,
 	`train_id` int,
@@ -27,6 +30,5 @@ CREATE TABLE `users` (
 	`password` varchar(256),
 	CONSTRAINT `users_id` PRIMARY KEY(`id`)
 );
---> statement-breakpoint
-ALTER TABLE `bookings` ADD CONSTRAINT `bookings_train_id_trains_id_fk` FOREIGN KEY (`train_id`) REFERENCES `trains`(`id`) ON DELETE no action ON UPDATE no action;--> statement-breakpoint
-ALTER TABLE `bookings` ADD CONSTRAINT `bookings_user_id_users_id_fk` FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE no action ON UPDATE no action;
+
+*/
