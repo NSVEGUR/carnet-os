@@ -19,6 +19,9 @@ app.use(
   })
 );
 
+app.use("/health", (req: Request, res: Response) => {
+  res.end("ok");
+});
 app.use("/user", userRouter);
 app.use("/trains", bookingRouter);
 

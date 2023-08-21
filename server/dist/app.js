@@ -16,6 +16,9 @@ app.use(express_1.default.urlencoded({ extended: false }));
 app.use((0, cors_1.default)({
     origin: "*",
 }));
+app.use("/health", (req, res) => {
+    res.end("ok");
+});
 app.use("/user", user_route_1.default);
 app.use("/trains", booking_route_1.default);
 //UNUSED ROUTES MIDDLEWARE

@@ -4,7 +4,7 @@
 	"type": "module",
 	"description": "",
 	"author": "nsvegur",
-	"license": "ISC",
+	"license": "MIT",
 	"repository": "https://github.com/NSVEGUR/carnetOS-web.git",
 	"scripts": {
 		"start": "npm run dev -- --open",
