@@ -1,7 +1,6 @@
 import app from "./app";
-import config from "./config";
 
-const port = config.PORT || 8000;
+const port = process.env.PORT || 8000;
 
 //Listening to the server
 app.listen(port, () => {
