@@ -10,7 +10,6 @@ dotenv_1.default.config({ path: path_1.default.resolve(__dirname, "./../.env") }
 const getConfig = () => {
     return {
         NODE_ENV: process.env.NODE_ENV,
-        PORT: process.env.PORT ? Number(process.env.PORT) : undefined,
         DB_URL: process.env.DB_URL,
     };
 };
