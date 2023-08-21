@@ -24,7 +24,7 @@
 		<span class="title">{appID.toString().toUpperCase()[0] + appID.toString().substring(1)}</span>
 	</button>
 {:else}
-	<a href="https://github.com/NSVEGUR/carnetOS-web" target="_blank">
+	<a href="https://github.com/NSVEGUR/carnetOS" target="_blank">
 		<button {...$$props}>
 			<slot />
 			<span class="title">{appID.toString().toUpperCase()[0] + appID.toString().substring(1)}</span>

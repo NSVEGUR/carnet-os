@@ -6,8 +6,6 @@
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "build": "rimraf dist && tsc",
-    "ts.check": "tsc --project tsconfig.json",
-    "add-build": "git add dist",
     "drizzle:generate": "drizzle-kit generate:mysql",
     "drizzle:push": "drizzle-kit push:mysql",
     "drizzle:drop": "drizzle-kit drop",
@@ -35,10 +33,5 @@
     "drizzle-orm": "^0.28.2",
     "express": "^4.17.2"
   },
-  "packageManager": "yarn@1.22.19",
-  "pre-commit": [
-    "ts.check",
-    "build",
-    "add-build"
-  ]
+  "packageManager": "yarn@1.22.19"
 }

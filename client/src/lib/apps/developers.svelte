@@ -150,7 +150,7 @@
 					<h2>Nagasai Vegur</h2>
 					<ul>
 						<li>
-							<a href="https://nsvegur.me" target="_blank">
+							<a href="https://nsvegur.vercel.app" target="_blank">
 								<i class="fas fa-paint-brush" />
 							</a>
 							<span>Website</span>

@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-const mainUrl = 'https://carnet-db.herokuapp.com/';
+const mainUrl = 'https://carnet-api.vercel.app/';
 const userUrl = mainUrl + 'user/';
 const trainsUrl = mainUrl + 'trains/';
 
