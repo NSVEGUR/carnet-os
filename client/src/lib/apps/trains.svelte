@@ -33,8 +33,232 @@
 								<div class="table-data">{result.departure || '7:00'}</div>
 								<div class="table-data">{result.arrival || '8:00'}</div>
 							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Hogwarts Express'}</div>
+								<div class="table-data">{result.from_place || 'Ashwatha'}</div>
+								<div class="table-data">{result.to_place || 'Gulmohar'}</div>
+								<div class="table-data">{result.departure || '8:00'}</div>
+								<div class="table-data">{result.arrival || '9:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Hogwarts Express'}</div>
+								<div class="table-data">{result.from_place || 'Gulmohar'}</div>
+								<div class="table-data">{result.to_place || 'Jasmine'}</div>
+								<div class="table-data">{result.departure || '9:00'}</div>
+								<div class="table-data">{result.arrival || '10:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Hogwarts Express'}</div>
+								<div class="table-data">{result.from_place || 'Jasmine'}</div>
+								<div class="table-data">{result.to_place || 'Academics'}</div>
+								<div class="table-data">{result.departure || '10:00'}</div>
+								<div class="table-data">{result.arrival || '11:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Hogwarts Express'}</div>
+								<div class="table-data">{result.from_place || 'Academics'}</div>
+								<div class="table-data">{result.to_place || 'Gate'}</div>
+								<div class="table-data">{result.departure || '11:00'}</div>
+								<div class="table-data">{result.arrival || '12:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Hogwarts Express'}</div>
+								<div class="table-data">{result.from_place || 'Gate'}</div>
+								<div class="table-data">{result.to_place || 'Academics'}</div>
+								<div class="table-data">{result.departure || '2:00'}</div>
+								<div class="table-data">{result.arrival || '3:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Hogwarts Express'}</div>
+								<div class="table-data">{result.from_place || 'Academics'}</div>
+								<div class="table-data">{result.to_place || 'Jasmine'}</div>
+								<div class="table-data">{result.departure || '3:00'}</div>
+								<div class="table-data">{result.arrival || '4:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Hogwarts Express'}</div>
+								<div class="table-data">{result.from_place || 'Jasmine'}</div>
+								<div class="table-data">{result.to_place || 'Gulmohar'}</div>
+								<div class="table-data">{result.departure || '4:00'}</div>
+								<div class="table-data">{result.arrival || '5:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Hogwarts Express'}</div>
+								<div class="table-data">{result.from_place || 'Gulmohar'}</div>
+								<div class="table-data">{result.to_place || 'AshWatha'}</div>
+								<div class="table-data">{result.departure || '6:00'}</div>
+								<div class="table-data">{result.arrival || '7:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Hogwarts Express'}</div>
+								<div class="table-data">{result.from_place || 'AshWatha'}</div>
+								<div class="table-data">{result.to_place || 'Ashoka'}</div>
+								<div class="table-data">{result.departure || '7:00'}</div>
+								<div class="table-data">{result.arrival || '8:00'}</div>
+							</div>
 						{/each}
 					</div>
+
+					<div class="table-content">
+						{#each results as result}
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Chennai Express'}</div>
+								<div class="table-data">{result.from_place || 'Ashoka'}</div>
+								<div class="table-data">{result.to_place || 'Ashwatha'}</div>
+								<div class="table-data">{result.departure || '6:00'}</div>
+								<div class="table-data">{result.arrival || '7:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Chennai Express'}</div>
+								<div class="table-data">{result.from_place || 'Ashwatha'}</div>
+								<div class="table-data">{result.to_place || 'Gulmohar'}</div>
+								<div class="table-data">{result.departure || '7:00'}</div>
+								<div class="table-data">{result.arrival || '8:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Chennai Express'}</div>
+								<div class="table-data">{result.from_place || 'Gulmohar'}</div>
+								<div class="table-data">{result.to_place || 'Jasmine'}</div>
+								<div class="table-data">{result.departure || '8:00'}</div>
+								<div class="table-data">{result.arrival || '9:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Chennai Express'}</div>
+								<div class="table-data">{result.from_place || 'Jasmine'}</div>
+								<div class="table-data">{result.to_place || 'Akshaya'}</div>
+								<div class="table-data">{result.departure || '9:00'}</div>
+								<div class="table-data">{result.arrival || '10:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Chennai Express'}</div>
+								<div class="table-data">{result.from_place || 'Akshaya'}</div>
+								<div class="table-data">{result.to_place || 'Academics'}</div>
+								<div class="table-data">{result.departure || '10:00'}</div>
+								<div class="table-data">{result.arrival || '11:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Chennai Express'}</div>
+								<div class="table-data">{result.from_place || 'Academics'}</div>
+								<div class="table-data">{result.to_place || 'Cafe'}</div>
+								<div class="table-data">{result.departure || '11:00'}</div>
+								<div class="table-data">{result.arrival || '12:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Chennai Express'}</div>
+								<div class="table-data">{result.from_place || 'Cafe'}</div>
+								<div class="table-data">{result.to_place || 'Academics'}</div>
+								<div class="table-data">{result.departure || '2:00'}</div>
+								<div class="table-data">{result.arrival || '3:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Chennai Express'}</div>
+								<div class="table-data">{result.from_place || 'Academics'}</div>
+								<div class="table-data">{result.to_place || 'Akshaya'}</div>
+								<div class="table-data">{result.departure || '3:00'}</div>
+								<div class="table-data">{result.arrival || '4:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Chennai Express'}</div>
+								<div class="table-data">{result.from_place || 'Akshaya'}</div>
+								<div class="table-data">{result.to_place || 'Jasmine'}</div>
+								<div class="table-data">{result.departure || '4:00'}</div>
+								<div class="table-data">{result.arrival || '5:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Chennai Express'}</div>
+								<div class="table-data">{result.from_place || 'Jasmine'}</div>
+								<div class="table-data">{result.to_place || 'Gulmohar'}</div>
+								<div class="table-data">{result.departure || '5:00'}</div>
+								<div class="table-data">{result.arrival || '6:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Chennai Express'}</div>
+								<div class="table-data">{result.from_place || 'Gulmohar'}</div>
+								<div class="table-data">{result.to_place || 'AshWatha'}</div>
+								<div class="table-data">{result.departure || '6:00'}</div>
+								<div class="table-data">{result.arrival || '7:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Chennai Express'}</div>
+								<div class="table-data">{result.from_place || 'AshWatha'}</div>
+								<div class="table-data">{result.to_place || 'Ashoka'}</div>
+								<div class="table-data">{result.departure || '7:00'}</div>
+								<div class="table-data">{result.arrival || '8:00'}</div>
+							</div>
+						{/each}
+					</div>
+					
+					<div class="table-content">
+						{#each results as result}
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Coramandel Express'}</div>
+								<div class="table-data">{result.from_place || 'Gulmohar'}</div>
+								<div class="table-data">{result.to_place || 'Ashwatha'}</div>
+								<div class="table-data">{result.departure || '8:00'}</div>
+								<div class="table-data">{result.arrival || '9:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Coramandel Express'}</div>
+								<div class="table-data">{result.from_place || 'Ashwatha'}</div>
+								<div class="table-data">{result.to_place || 'Arjuna'}</div>
+								<div class="table-data">{result.departure || '9:00'}</div>
+								<div class="table-data">{result.arrival || '10:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Coramandel Express'}</div>
+								<div class="table-data">{result.from_place || 'Arjuna'}</div>
+								<div class="table-data">{result.to_place || 'Cafe'}</div>
+								<div class="table-data">{result.departure || '10:00'}</div>
+								<div class="table-data">{result.arrival || '11:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Coramandel Express'}</div>
+								<div class="table-data">{result.from_place || 'Cafe'}</div>
+								<div class="table-data">{result.to_place || 'Academics'}</div>
+								<div class="table-data">{result.departure || '11:00'}</div>
+								<div class="table-data">{result.arrival || '12:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Coramandel Express'}</div>
+								<div class="table-data">{result.from_place || 'Academics'}</div>
+								<div class="table-data">{result.to_place || 'Gate'}</div>
+								<div class="table-data">{result.departure || '12:00'}</div>
+								<div class="table-data">{result.arrival || '1:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Coramandel Express'}</div>
+								<div class="table-data">{result.from_place || 'Gate'}</div>
+								<div class="table-data">{result.to_place || 'Academics'}</div>
+								<div class="table-data">{result.departure || '1:00'}</div>
+								<div class="table-data">{result.arrival || '2:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Coramandel Express'}</div>
+								<div class="table-data">{result.from_place || 'Academics'}</div>
+								<div class="table-data">{result.to_place || 'Akshaya'}</div>
+								<div class="table-data">{result.departure || '2:00'}</div>
+								<div class="table-data">{result.arrival || '3:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Coramandel Express'}</div>
+								<div class="table-data">{result.from_place || 'Akshaya'}</div>
+								<div class="table-data">{result.to_place || 'Jasmine'}</div>
+								<div class="table-data">{result.departure || '3:00'}</div>
+								<div class="table-data">{result.arrival || '4:00'}</div>
+							</div>
+							<div class="table-row">
+								<div class="table-data">{result.trainname || 'Coramandel Express'}</div>
+								<div class="table-data">{result.from_place || 'Jasmine'}</div>
+								<div class="table-data">{result.to_place || 'Gulmohar'}</div>
+								<div class="table-data">{result.departure || '4:00'}</div>
+								<div class="table-data">{result.arrival || '5:00'}</div>
+							</div>
+							
+						{/each}
+					</div>
+					
+					  
+					  
 				</div>
 			</div>
 		{:else}
